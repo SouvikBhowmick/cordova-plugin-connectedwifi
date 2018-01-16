@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-plugin-connectedwifi" version="0.2.3">
+    <name>ConnectedWifi</name>
+    <description>Cordova Connected Wifi Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,connected,wifi</keywords>
+    <js-module src="www/connectedwifi.js" name="connectedwifi">
+        <clobbers target="connectedwifi" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="ConnectedWifi">
+                <param name="ios-package" value="CDVConnectedWifi"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/CDVConnectedWifi.h" />
+        <source-file src="src/ios/CDVConnectedWifi.m" />
+        <framework src="SystemConfiguration.framework" />
+    </platform>
+</plugin>
