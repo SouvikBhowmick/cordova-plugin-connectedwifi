@@ -23,6 +23,10 @@
       "ecosystem:cordova",
       "cordova-ios",
     ],
+    "scripts": {
+    "test": "npm run eslint",
+    "eslint": "node node_modules/eslint/bin/eslint www && node node_modules/eslint/bin/eslint src && node node_modules/eslint/bin/eslint tests"
+  },
     "author": "Souvik Bhowmick",
     "license": "Apache-2.0",
     "engines": {
