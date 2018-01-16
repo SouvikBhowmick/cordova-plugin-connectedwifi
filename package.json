@@ -1,0 +1,44 @@
+{
+    "name": "cordova-plugin-connectedwifi",
+    "version": "0.0.1-dev",
+    "description": "Cordova Connected Wifi Plugin",
+    "cordova": {
+      "id": "cordova-plugin-connectedwifi",
+      "platforms": [
+        "ios"
+      ]
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/SouvikBhowmick/cordova-plugin-connectedwifi"
+    },
+    "bugs": {
+      "url": ""
+    },
+    "keywords": [
+      "cordova",
+      "connectedwifi",
+      "connected",
+      "wifi",
+      "ecosystem:cordova",
+      "cordova-ios",
+    ],
+    "author": "Souvik Bhowmick",
+    "license": "Apache-2.0",
+    "engines": {
+      "cordovaDependencies": {
+        "3.0.0": {
+          "cordova": ">100"
+        }
+      }
+    },
+    "devDependencies": {
+      "eslint": "^3.19.0",
+      "eslint-config-semistandard": "^11.0.0",
+      "eslint-config-standard": "^10.2.1",
+      "eslint-plugin-import": "^2.3.0",
+      "eslint-plugin-node": "^5.0.0",
+      "eslint-plugin-promise": "^3.5.0",
+      "eslint-plugin-standard": "^3.0.1"
+    }
+  }
