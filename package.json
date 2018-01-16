@@ -21,7 +21,7 @@
       "connected",
       "wifi",
       "ecosystem:cordova",
-      "cordova-ios",
+      "cordova-ios"
     ],
     "scripts": {
     "test": "npm run eslint",
