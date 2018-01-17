@@ -7,7 +7,7 @@ var cordova = require('cordova');
 function ConnectedWifi () {
     this.SSID = null;
     this.BSSID = null;
-    this.version = null;
+    this.SSIDDATA = null;
     
     var me = this;
 
@@ -15,7 +15,7 @@ function ConnectedWifi () {
         me.getWifiInfo(function (info) {
             me.SSID = info.SSID;
             me.BSSID = info.BSSID;
-            me.version = info.version;
+            me.SSIDDATA = info.SSIDDATA;
             channel.onCordovaInfoReady.fire();
         }, function (e) {
             utils.alert('[ERROR] Error initializing Cordova: ' + e);
